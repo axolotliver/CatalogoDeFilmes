@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="categorias.css">
+    <title>Categorias de Filmes</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-brand">CineFlix</div>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="catalogo.html" style="color: #e50914;">Catálogo</a>
+            <a href="favoritos.html">Favoritos</a>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <div class="categories-container">
+        <header class="page-header">
+            <h1 class="page-title">Explore Categorias</h1>
+            <p>Descubra filmes por gêneros e temas</p>
+        </header>
+
+        <!-- Grid de Categorias -->
+        <div class="category-grid">
+            <!-- Categoria 1 -->
+            <article class="category-card">
+                <img src="acao.jpg" alt="Ação" class="category-image">
+                <div class="category-info">
+                    <h2 class="category-name">Ação</h2>
+                    <div class="category-stats">
+                        <span>328 filmes</span> • <span>⭐ 8.2 Média</span>
+                    </div>
+                    <div class="sub-genres">
+                        <span class="genre-tag">Super-heróis</span>
+                        <span class="genre-tag">Espionagem</span>
+                        <span class="genre-tag">Artes Marciais</span>
+                    </div>
+                    <button class="explore-btn">Explorar Categoria</button>
+                </div>
+            </article>
+
+            <!-- Categoria 2 -->
+            <article class="category-card">
+                <img src="drama.jpg" alt="Drama" class="category-image">
+                <div class="category-info">
+                    <h2 class="category-name">Drama</h2>
+                    <div class="category-stats">
+                        <span>512 filmes</span> • <span>⭐ 8.9 Média</span>
+                    </div>
+                    <div class="sub-genres">
+                        <span class="genre-tag">Histórico</span>
+                        <span class="genre-tag">Romance</span>
+                        <span class="genre-tag">Biografia</span>
+                    </div>
+                    <button class="explore-btn">Explorar Categoria</button>
+                </div>
+            </article>
+
+            <!-- Mais categorias... -->
+        </div>
+
+        <!-- Seção de Subgêneros -->
+        <section style="padding: 2rem 0;">
+            <h2 style="margin-bottom: 2rem;">Subgêneros Populares</h2>
+            <div class="category-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));">
+                <div class="subgenre-card">
+                    <div style="background: #e50914; padding: 1.5rem; border-radius: 15px;">
+                        <h3>Cyberpunk</h3>
+                        <p>45 filmes</p>
+                    </div>
+                </div>
+                <!-- Mais subgêneros... -->
+            </div>
+        </section>
+    </div>
+</body>
+</html>

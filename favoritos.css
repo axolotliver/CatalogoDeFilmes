@@ -1,0 +1,139 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #0a0a0a;
+            color: #fff;
+            padding-top: 80px;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 1000;
+        }
+
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #e50914;
+        }
+
+        /* Estilos específicos da página de favoritos */
+        .favorites-container {
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .favorites-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .favorites-title {
+            font-size: 2.5rem;
+            color: #e50914;
+            margin-bottom: 1rem;
+        }
+
+        .favorites-count {
+            color: #888;
+            font-size: 1.1rem;
+        }
+
+        .favorites-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+
+        .favorite-card {
+            background: #1a1a1a;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            position: relative;
+        }
+
+        .favorite-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .remove-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #e50914;
+            border: none;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            color: white;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .favorite-card:hover .remove-btn {
+            opacity: 1;
+        }
+
+        .favorite-poster {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-bottom: 3px solid #e50914;
+        }
+
+        .favorite-info {
+            padding: 1.5rem;
+        }
+
+        .favorite-movie-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .favorite-details {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+
+        .empty-favorites {
+            text-align: center;
+            padding: 5rem 0;
+        }
+
+        .empty-icon {
+            font-size: 5rem;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        .empty-message {
+            color: #666;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .favorites-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .favorite-poster {
+                height: 300px;
+            }
+        }
