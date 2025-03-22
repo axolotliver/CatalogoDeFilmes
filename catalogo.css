@@ -1,6 +1,4 @@
-
-        /* Reset e Estilos Gerais */
-        * {
+    * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -13,7 +11,6 @@
             padding-top: 80px;
         }
 
-        /* Navbar */
         .navbar {
             position: fixed;
             top: 0;
@@ -51,14 +48,12 @@
             color: white;
         }
 
-        /* Layout Principal */
         .main-container {
             display: flex;
             gap: 2rem;
             padding: 2rem;
         }
 
-        /* Filtros */
         .filters-section {
             width: 250px;
             height: fit-content;
@@ -94,7 +89,6 @@
             gap: 0.5rem;
         }
 
-        /* Grid de Filmes */
         .movies-grid {
             flex: 1;
             display: grid;
@@ -126,11 +120,14 @@
         }
 
         .movie-title {
-            font-size: 1rem;
+            font-size: 16px;
             margin-bottom: 0.5rem;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+            color:white;
+            text-decoration: none;
+            font-weight: bold
         }
 
         .movie-details {
@@ -181,7 +178,6 @@
             background: #e50914;
         }
 
-        /* Responsividade */
         @media (max-width: 768px) {
             .main-container {
                 flex-direction: column;

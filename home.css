@@ -1,6 +1,5 @@
 
-        /* Estilos anteriores mantidos */
-        * {
+    * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -44,7 +43,6 @@
             color: #e50914;
         }
 
-        /* Novos estilos para a home */
         .hero {
             height: 70vh;
             background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
@@ -80,6 +78,7 @@
             font-size: 1.1rem;
             cursor: pointer;
             transition: transform 0.3s;
+            text-decoration: none;
         }
 
         .cta-button:hover {
@@ -123,6 +122,16 @@
             right: 0;
             background: linear-gradient(transparent, rgba(0,0,0,0.9));
             padding: 2rem 1rem 1rem;
+        }
+        .movie-title{
+            position: left;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 2rem 0rem 1rem;
+            color:white;
+            text-decoration: none;
+            font-size: 20px;
         }
 
         .categories-grid {
