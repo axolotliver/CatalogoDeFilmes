@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="catalogo.css">
+    <title>Catálogo de Filmes</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-brand">CineFlix</div>
+        <input type="search" class="search-box" placeholder="Pesquisar filmes...">
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <div class="main-container">
+        <!-- Seção de Filtros -->
+        <aside class="filters-section">
+            <div class="filter-group">
+                <h3 class="filter-title">Gêneros</h3>
+                <ul class="genre-list">
+                    <li class="genre-item">
+                        <label>
+                            <input type="checkbox"> Ação
+                        </label>
+                    </li>
+                    <li class="genre-item">
+                        <label>
+                            <input type="checkbox"> Comédia
+                        </label>
+                    </li>
+                    <!-- Adicionar mais gêneros -->
+                </ul>
+            </div>
+
+            <div class="filter-group">
+                <h3 class="filter-title">Ano</h3>
+                <select class="year-select">
+                    <option>Todos os anos</option>
+                    <option>2023</option>
+                    <option>2022</option>
+                    <!-- Adicionar mais anos -->
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <h3 class="filter-title">Classificação</h3>
+                <input type="range" min="0" max="10" value="5" class="rating-slider">
+            </div>
+        </aside>
+
+        <!-- Grid de Filmes -->
+        <section class="movies-grid">
+            <!-- Card de Filme 1 -->
+            <article class="movie-card">
+                <img src="poster1.jpg" alt="Poster do Filme" class="movie-poster">
+                <div class="movie-info">
+                    <h3 class="movie-title">Vingadores: Ultimato</h3>
+                    <div class="movie-details">
+                        <span class="movie-year">2019</span>
+                        <span class="movie-rating">⭐ 8.4</span>
+                    </div>
+                    <div class="movie-genres">
+                        <span class="genre-badge">Ação</span>
+                        <span class="genre-badge">Aventura</span>
+                    </div>
+                    <button class="favorite-btn">Adicionar aos Favoritos</button>
+                </div>
+            </article>
+
+            <!-- Card de Filme 2 -->
+            <article class="movie-card">
+                <img src="poster2.jpg" alt="Poster do Filme" class="movie-poster">
+                <div class="movie-info">
+                    <h3 class="movie-title">O Poderoso Chefão</h3>
+                    <div class="movie-details">
+                        <span class="movie-year">1972</span>
+                        <span class="movie-rating">⭐ 9.2</span>
+                    </div>
+                    <div class="movie-genres">
+                        <span class="genre-badge">Drama</span>
+                        <span class="genre-badge">Crime</span>
+                    </div>
+                    <button class="favorite-btn">Adicionar aos Favoritos</button>
+                </div>
+            </article>
+
+            <!-- Adicionar mais cards de filmes -->
+        </section>
+    </div>
+</body>
+</html>
